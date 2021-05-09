@@ -1,0 +1,86 @@
+h1
+{
+  text-align: center;
+  color: #CD802A;
+  margin: 3rem 0;
+}
+
+main
+{
+  margin-top: 5rem;
+}
+
+.container
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem 0.5rem;
+
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.item
+{
+  position: relative;
+
+  max-width: 420px;
+  width: 420px;
+  height: 420px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+.item:hover
+{
+  border: 5px solid #CD802A;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+@media (min-width: 1450px)
+{
+  .item
+  {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 1200px)
+{
+  .container
+  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 890px)
+{
+  .item
+  {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 660px)
+{
+  .container
+  {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 450px)
+{
+  .item
+  {
+    width: 250px;
+    height: 250px;
+  }
+}

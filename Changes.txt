@@ -1,0 +1,6 @@
+- Menu is responsive
+- Content is responsive
+- Winkelwagen werkt
+- Content is aangepast voor meer contrast en leesbaarheid
+- HTML is opgeschoont
+- CSS is bijna compleet herschreven

@@ -1,0 +1,179 @@
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ-6H6Mw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+
+* 
+{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html,
+body 
+{
+  width: 100%;
+}
+
+body 
+{
+  background-color: #f9f1bf;
+}
+
+nav 
+{
+  display: flex;
+  justify-content: center;
+
+  position: sticky;
+  top: 2rem;
+
+  z-index: 1000;
+}
+
+nav * 
+{
+  font-family: "Helvetica";
+}
+
+nav ul 
+{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 1rem 3em;
+
+  border-radius: 50px;
+  background-color: #cd802a;
+  transition: 1s ease;
+}
+
+nav li 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2%;
+}
+
+nav a 
+{
+  font-size: 2em;
+  font-weight: 400;
+  color: #FFF;
+  transition: 0.3s ease;
+}
+
+nav a:hover 
+{
+  transition: 0.3s ease;
+  color: #fcd52a;
+  text-shadow: 2px 4px 5px rgba(192, 203, 32, 0.4);
+}
+
+nav .logoContainer 
+{
+  position: relative;
+  width: 7rem;
+  padding: 0;
+}
+
+nav .logoContainer img 
+{
+  transform: translatey(-50%);
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  width: 7rem;
+  border: 1px solid rgba(50, 50, 50, 0.3);
+  border-radius: 50%;
+  box-shadow: 4px 4px 4px #777A;
+}
+
+h1, h2, h3, h4,
+p
+{
+  font-family: Helvetica, sans-serif;
+}
+
+/* mediaqueries */
+@media screen and (max-width: 1120px) 
+{
+  nav ul 
+  {
+    flex-direction: column;
+  }
+
+  nav ul li,
+  nav ul .logoContainer 
+  {
+    width: 100%;
+  }
+
+  nav ul .logoContainer 
+  {
+    position: relative;
+    padding: unset;
+    justify-content: flex-start;
+  }
+
+  nav ul .logoContainer img 
+  {
+    transform: translatey(-50%);
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 700px) 
+{
+  nav ul li:not(.logoContainer) 
+  {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 540px) 
+{
+  nav ul 
+  {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) 
+{
+  nav ul 
+  {
+    padding: 1em;
+  }
+
+  nav ul .logoContainer 
+  {
+    justify-content: center;
+    margin: 1em 0;
+  }
+  nav ul .logoContainer img
+  {
+    position: unset;
+    transform: unset;
+  }
+
+  nav ul li:not(.logoContainer)
+  {
+    justify-content: center;
+  }
+}

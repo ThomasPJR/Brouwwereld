@@ -1,0 +1,22 @@
+main
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 90vh;
+    width: 100vw;
+}
+
+section
+{
+    text-align: center;
+    background-color: #cd802aa3;
+    padding: 5% 15%;
+    border-radius: 30px;
+}
+
+section p
+{
+    line-height: 3em;
+}
